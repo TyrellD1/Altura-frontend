@@ -1,5 +1,3 @@
-# Your Tauri App Name
-
 ## Description
 
 EthBag uses Tauri to allow users to manage multiple eth wallets in a desktop application.
