@@ -1,0 +1,138 @@
+.form-container {
+    width: 95vw;
+    max-width: 681px;
+
+    max-height: 95vh;
+
+    overflow-y: auto;
+
+    padding: 40px 60px;
+
+    border: 3px solid var(--color-light-accent);
+    border-radius: 16px;
+
+    background-color: var(--color-bg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.btn-primary {
+    display: block;
+
+    height: 72px;
+    min-height: 72px;
+
+    width: 100%;
+
+    border-radius: 8px;
+    border: 1px solid var(--color-accent);
+    background: transparent;
+
+    color: var(--color-accent);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .btn-primary {
+        font-size: 20px;
+        height: 56px;
+        min-height: 56px;
+    }
+}
+
+.btn-primary:hover {
+    border: 1px solid #3d40fa;
+    background: #0b0d1a;
+    box-shadow: 3px 4px 4px -2px rgba(88, 80, 245, 0.2);
+}
+
+.btn-primary:disabled {
+    opacity: .3;
+    cursor: not-allowed;
+}
+
+.btn-primary.contained {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+.btn-primary.contained:hover {
+    background: #3d40fa;
+    box-shadow: 3px 4px 4px -2px rgba(88, 80, 245, 0.2);
+}
+
+main.form-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+main.form-layout .altura-frontend-logo {
+    /*
+    Absolute works fine as form-container has static height - 
+    test/adjust for responsive as needed.
+    */
+    position: absolute;
+    left: 65px;
+    top: 65px;
+}
+
+.eth-gif-container {
+    width: 316px;
+    height: 227px;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.eth-gif {
+    width: 312px;
+    height: 312px;
+
+    position: absolute;
+    top: -43px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    filter: url(#customColorMask);
+}
+
+.form-loading-container {
+    position: absolute;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(16, 18, 35, 0.70);
+
+    border-radius: 16px;
+
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+.passwordStrengthChecker {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 7px;
+
+    width: 100%;
+
+    margin-top: 24px;
+    margin-bottom: 14px;
+
+
+}
+
+.strengthCheckerItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.strengthCheckerIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.strengthCheckerItemTxt {       
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}

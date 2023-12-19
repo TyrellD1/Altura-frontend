@@ -1,0 +1,154 @@
+.dashboardMain {
+    width: 95vw;
+    max-width: 1728px;
+
+    margin: 0 auto;
+}
+
+.dashboardNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 68px;
+}
+
+.dashboardNavbar .dashboardNavbarSendBtn {
+    display: flex;
+    padding: 10px 20px;
+
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: fit-content;
+
+    border-radius: 16px;
+    border-width: 3px;
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.dashboardNavbar .dashboardNavbarSendBtn:hover {
+    border-width: 3px;
+}
+
+.dashboardNavbarSendBtn svg {
+    width: 24px;
+    height: 24px;
+
+    fill: var(--color-accent);
+}
+
+.dashboardNavbarSendBtn:hover {
+    border-width: 3px;
+}
+
+.walletsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 100%;
+
+    margin-top: 76px;
+}
+
+.walletContainer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: fit-content;
+
+    padding: 12px 24px;
+
+    border-radius: 16px;
+    border: 3px solid var(--color-light-accent);
+
+    cursor: pointer;
+}
+
+.walletAddressContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.walletAddressContainer span {
+    color: #2428f4;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.walletAddressContainer p {
+    display: flex;
+
+    margin: 0;
+
+    color: var(--color-accent);
+    fill: var(--color-accent);
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    transition: color .2s ease-in-out;
+}
+
+.copied p {
+    transition: color 0s;
+}
+
+.walletAddressContainer svg {
+    width: 24px;
+    height: 24px;
+
+    fill: inherit;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: .15em;
+
+    transition: fill .2s ease-in-out;
+}
+
+.walletContainer:hover .walletAddressContainer p {
+    color: var(--color-primary);
+    fill: var(--color-primary);
+}
+
+.walletContainer:hover .copied p {
+    color: var(--color-accent);
+}
+
+.ethBalanceContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 100%;
+}
+
+.ethBalance {
+    color: var(--color-primary);
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    margin: 0;
+}

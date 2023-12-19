@@ -1,0 +1,112 @@
+.sendFrom {
+    color: var(--color-accent);
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 100%;
+
+    text-align: left;
+
+    margin-top: 24px;
+}
+
+.walletsContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-top: 16px;
+
+    gap: 16px;
+}
+
+.walletContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+    border: 1px solid var(--color-light-accent);
+
+    transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
+}
+
+.walletContainerSelected {
+    border-color: var(--color-accent);
+    background: var(--color-alt-accent, #2B141F);
+}
+
+.walletAddress {
+    color: var(--color-accent);
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.ethBalance {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.amountInputWrapper input {
+    padding-right: 87px;
+}
+
+.inputEthAdornment {
+    position: absolute;
+    top: 75px;
+    right: 14px;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.estimatedGas {
+    color: var(--color-primary);
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-top: 24px;
+}
+
+.estimatedSpan {
+    color: var(--color-accent);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.successStage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}

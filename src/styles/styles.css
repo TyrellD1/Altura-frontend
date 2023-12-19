@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* colors */
+  --color-primary: #ffffff;
+  --color-bg: #0e0e0e;
+  --color-accent: #5058f5;
+  --color-light-accent: #1d1d3f;
+  --color-alt-accent: #0b1417;
+
+  font-family: IBM Plex Mono;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--color-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+
+  background-color: var(--color-bg);
+}
+
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h2 {
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  width: 100%;
+
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: 6px;
+  }
+}
+
+button {
+  font-family: IBM Plex Mono;
+  background-color: transparent;
+}
+
+.altura-frontend-logo {
+  color: var(--color-primary);
+  font-family: IBM Plex Mono;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20.8px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
